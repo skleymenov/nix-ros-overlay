@@ -1,16 +1,16 @@
 
-# Copyright 2020 Open Source Robotics Foundation
+# Copyright 2021 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 { lib, buildRosPackage, fetchurl, ackermann-steering-controller, catkin, diff-drive-controller, effort-controllers, force-torque-sensor-controller, forward-command-controller, gripper-action-controller, imu-sensor-controller, joint-state-controller, joint-trajectory-controller, position-controllers, velocity-controllers }:
 buildRosPackage {
   pname = "ros-melodic-ros-controllers";
-  version = "0.17.0-r1";
+  version = "0.17.2-r1";
 
   src = fetchurl {
-    url = "https://github.com/ros-gbp/ros_controllers-release/archive/release/melodic/ros_controllers/0.17.0-1.tar.gz";
-    name = "0.17.0-1.tar.gz";
-    sha256 = "077eed8715d83605a2115ec190675ccaa576b6ad7cee1e71f0faab2b5b374226";
+    url = "https://github.com/ros-gbp/ros_controllers-release/archive/release/melodic/ros_controllers/0.17.2-1.tar.gz";
+    name = "0.17.2-1.tar.gz";
+    sha256 = "a7b4e753197be0734e0703db5b7254c6fed1661d1df9653bb3083d6e378e0069";
   };
 
   buildType = "catkin";

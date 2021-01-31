@@ -1,16 +1,16 @@
 
-# Copyright 2020 Open Source Robotics Foundation
+# Copyright 2021 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
 { lib, buildRosPackage, fetchurl, ament-cmake, ament-cmake-ros, ament-lint-auto, ament-lint-common, fastcdr, fastrtps, fastrtps-cmake-module, osrf-testing-tools-cpp, rcpputils, rcutils, rmw, rmw-dds-common }:
 buildRosPackage {
   pname = "ros-foxy-rmw-fastrtps-shared-cpp";
-  version = "1.2.3-r1";
+  version = "1.2.4-r1";
 
   src = fetchurl {
-    url = "https://github.com/ros2-gbp/rmw_fastrtps-release/archive/release/foxy/rmw_fastrtps_shared_cpp/1.2.3-1.tar.gz";
-    name = "1.2.3-1.tar.gz";
-    sha256 = "8502eda9ac05734b877d92d1a1385976d965dd78d4668cc1f749c3ddda12d96f";
+    url = "https://github.com/ros2-gbp/rmw_fastrtps-release/archive/release/foxy/rmw_fastrtps_shared_cpp/1.2.4-1.tar.gz";
+    name = "1.2.4-1.tar.gz";
+    sha256 = "15bb1f98973966f50dec63695f17dfd80b047915b3bee0e958462d16d989f3b1";
   };
 
   buildType = "ament_cmake";
